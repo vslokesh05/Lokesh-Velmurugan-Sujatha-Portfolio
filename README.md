@@ -9,7 +9,7 @@ This project showcases my **skills, projects, experience, and contact details** 
 - **Flask** - Python Web Framework 🐍
 - **HTML5** - Page Structure 📄
 - **CSS3** - Styling & Animations 🎨
-- **JavaScript (Typed.js)** - Typing Effect ⌨️
+- **JavaScript (Typed.js)**
 - **Gunicorn** - Production Server 🚀
 - **Render** - Web Hosting 🌍
 
