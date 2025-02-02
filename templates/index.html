@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lokesh's Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    {% include 'navbar.html' %}
+
+    <!-- Home Section with Typing Effect and Social Links -->
+<section id="home">
+    <img src="{{ url_for('static', filename='images/avatar.png') }}" alt="Lokesh Velmurugan Sujatha" class="avatar">
+    <h1>Hello, I'm Lokesh Velmurugan Sujatha</h1>
+    <p class="typing-container">
+        I'm a <span id="typing-text" class="gradient-text"></span>
+    </p>
+
+    <!-- Social Media Links -->
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/vs-lokesh05/" target="_blank">
+            <img src="{{ url_for('static', filename='images/LinkedIn.png') }}" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/vslokesh05" target="_blank">
+            <img src="{{ url_for('static', filename='images/github.png') }}" alt="GitHub">
+        </a>
+        <a href="https://scholar.google.com/citations?user=DSRVO1AAAAAJ&hl=en" target="_blank">
+            <img src="{{ url_for('static', filename='images/google scholar.png') }}" alt="Google Scholar">
+        </a>
+    </div>
+</section>
+
+
+<!-- About Section -->
+<section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+        <div class="about-photo">
+            <img src="{{ url_for('static', filename='images/avatar1.png') }}" alt="Lokesh Velmurugan">
+        </div>
+        <div class="about-text">
+            <h3>Lokesh Velmurugan Sujatha</h3>
+                <p>I am a dedicated Data Scientist passionate about using data to solve problems and create meaningful solutions. 
+                I am currently pursuing my Master’s in Data Science at the University at Buffalo, where I focus on machine learning, data visualization, and cloud computing.</p>
+            </p>
+            <p>
+                I previously worked as a Programmer Analyst Trainee at Cognizant, where I developed dashboards, automated workflows, and improved data processes to make operations more efficient. 
+                Some of my key projects include creating a deep learning model to classify motorcycle brands and designing a system to predict Airbnb rental prices. 
+                I am skilled in tools like Tableau, Power BI, and programming languages such as Python, SQL , and R, which I use to deliver practical and effective results.
+            </p>
+            <p>
+                I have earned certifications like Microsoft Azure Fundamentals and gained experience with advanced machine learning techniques. 
+                I enjoy learning new technologies and applying them to real-world challenges in data science.
+            </p>
+            <p>
+                In short, I am passionate about using data to uncover insights, solve challenges, and make a positive impact.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Journey Section -->
+<section id="journey">
+    <h2>My Journey</h2>
+    <div class="timeline">
+        <!-- Education - Left Side -->
+        <div class="timeline-item left">
+            <div class="timeline-content">
+                <h3>University at Buffalo, SUNY</h3>
+                <p>M.S. in Data Science </p>
+                <p>September 2023 – Janurary 2025</p>
+                <p>Statistical Data Mining , 
+                    Numerical Methods,Data Models and Query Language, 
+                    Data Intensive Computing , 
+                    Intro Machine Learning, 
+                    Story Telling using Tableau and Power BI, 
+                    Probability, 
+                    Programming and Database Fundamentals for Data Science , 
+                    Data Structures and Algorithms in Python.</p>
+            </div>
+            <div class="dot"></div>
+        </div>
+
+        <!-- Experience - Right Side -->
+        <div class="timeline-item right">
+            <div class="dot"></div>
+            <div class="timeline-content">
+                <h3>Programmer Analyst Trainee - Data Analyst </h3>
+                <p>Cognizant</p>
+                <p>March 2023 – August 2023</p>
+                <p>Analyzed reservation and customer data to identify booking trends and opportunities for revenue growth, leading to a 10% increase in profitability.
+                    Developed interactive Power BI dashboards and reports to provide clear insights into key metrics such as occupancy rates, booking sources, and cancellation trends, enhancing operational visibility for management.
+                    Designed and implemented a robust data processing pipeline, automating workflows using Python and SQL to reduce manual effort, improve data accuracy, and streamline data integration across systems.
+                    Streamlined reservation data management processes, achieving 25% increase in reservations, while enhancing reporting efficiency across three key departments through the implementation of automated quality checks.</p>
+            </div>
+        </div>
+
+        <!-- Education - Left Side -->
+        <div class="timeline-item left">
+            <div class="timeline-content">
+                <h3>Thiagarajar College of Engineering</h3>
+                <p>B.E. in Electronics and Communication</p>
+                <p>August 2019 – June 2023</p>
+                <p>Image Processing,
+                   Computer vision,
+                   Machine Learning,
+                   Electronics Circuits and Devices,
+                   Data Communication Networks,
+                   Signal Processing,
+                   Electronic Devices
+                </p>
+            </div>
+            <div class="dot"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Area of Expertise Section -->
+<section id="expertise">
+    <h2>Domain Expertise</h2>
+    <div class="expertise-container">
+        <div class="expertise-box">
+            <img src="{{ url_for('static', filename='images/ml.png') }}" alt="Machine Learning">
+            <p>Machine Learning</p>
+        </div>
+        <div class="expertise-box">
+            <img src="{{ url_for('static', filename='images/dl.png') }}" alt="Deep Learning">
+            <p>Deep Learning</p>
+        </div>
+        <div class="expertise-box">
+            <img src="{{ url_for('static', filename='images/data_sci.png') }}" alt="Data Scientist">
+            <p>Data Scientist</p>
+        </div>
+        <div class="expertise-box">
+            <img src="{{ url_for('static', filename='images/data_ana.png') }}" alt="Data Analyst">
+            <p>Data Analyst</p>
+        </div>
+        <div class="expertise-box">
+            <img src="{{ url_for('static', filename='images/image_proc.png') }}" alt="Image Processing">
+            <p>Image Processing</p>
+        </div>
+        <div class="expertise-box">
+            <img src="{{ url_for('static', filename='images/comp_vision.png') }}" alt="Computer Vision">
+            <p>Computer Vision</p>
+        </div>
+    </div>
+</section>
+
+
+
+ <!-- Projects Section -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+        <div class="project-tile">
+            <h3>Deep Learning Based Two-Wheeler Identification</h3>
+            <p>Developed a Faster R-CNN-based deep learning model for accurate motorcycle brand classification.</p>
+            <a href="https://github.com/vslokesh05/Deep_Learning_Based_Two_Wheeler_identification_and_Classification" target="_blank">View Repository</a>
+        </div>
+
+        <div class="project-tile">
+            <h3>Airbnb Rental Price Prediction</h3>
+            <p>Designed a machine learning model using regression techniques to predict Airbnb rental prices.</p>
+            <a href="https://github.com/vslokesh05/Airbnb_Price_Prediction" target="_blank">View Repository</a>
+        </div>
+
+        <div class="project-tile">
+            <h3>COVID-19 Case Surveillance: Storytelling Using Tableau and Power BI</h3>
+            <p>Visualized COVID-19 case trends using interactive dashboards in Tableau and Power BI.</p>
+            <a href="https://github.com/vslokesh05/COVID_19_Case_Surveillance" target="_blank">View Repository</a>
+        </div>
+
+        <div class="project-tile">
+            <h3>Car Sales Database Management System</h3>
+            <p>Developed a relational database system for managing car sales using SQL and normalization techniques.</p>
+            <a href="https://github.com/vslokesh05/Car_Sales_Database_Management_System-Database-Solution" target="_blank">View Repository</a>
+        </div>
+
+        <div class="project-tile">
+            <h3>Wafermap Defect Classification Using K-Means Clustering</h3>
+            <p>Applied unsupervised learning (K-Means Clustering) for defect classification in semiconductor wafers.</p>
+            <a href="https://github.com/vslokesh05/Unsupervised_Learning_Based_Wafermap_Defect_Classification_Using_K-Means_Clustering" target="_blank">View Repository</a>
+        </div>
+
+        <div class="project-tile">
+            <h3>Adult Income Classification</h3>
+            <p>Built a classification model to predict income levels based on census data using machine learning.</p>
+            <a href="https://github.com/vslokesh05/ADULT-INCOME-CLASSIFICATION" target="_blank">View Repository</a>
+        </div>
+
+        <div class="project-tile">
+            <h3>Online Hotel Reservation and Management System</h3>
+            <p>Designed a database-driven system for hotel reservations, management, and customer tracking.</p>
+            <a href="https://github.com/vslokesh05/Online-Hotel-Reservation-and-Management-System" target="_blank">View Repository</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact</h2>
+
+    <div class="contact-container">
+        <!-- Contact Info Box -->
+        <div class="contact-box">
+            <p>
+                <img src="{{ url_for('static', filename='images/location-icon.png') }}" alt="Location">
+                <strong>Location:</strong> Buffalo, New York, NY - 14214
+            </p>
+            <p>
+                <img src="{{ url_for('static', filename='images/email-icon.png') }}" alt="Email">
+                <strong>Email:</strong> 
+                <a href="mailto:vslokesh2001@gmail.com">vslokesh2001@gmail.com</a>
+            </p>
+            <p>
+                <img src="{{ url_for('static', filename='images/phone-icon.png') }}" alt="Phone">
+                <strong>Call:</strong> +1 (803)-298-9870
+            </p>
+        </div>
+
+        <!-- Google Map -->
+        <div class="contact-map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094345!2d-78.87836878468198!3d42.88644627914978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d3126594b45041%3A0x2d8e2e2e849db44b!2sBuffalo%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1611549579576!5m2!1sen!2sus" 
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
